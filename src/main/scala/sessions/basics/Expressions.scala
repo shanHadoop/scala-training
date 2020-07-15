@@ -2,7 +2,7 @@ package sessions.basics
 
 object Expressions extends App {
 
-  val x = 1+2 // the right hand side is callec an expression
+  val x = 1+2 // the right hand side is called an expression
   println(x)
 
   println(2+3*4) // math expression follow the BODMAS order
@@ -21,6 +21,7 @@ object Expressions extends App {
   val conditionalValue = if(someCondition) "foo" else "bar"
   println(conditionalValue)
 
+  //use expression as is
   println(if(someCondition) "foo" else "bar")
 
   //loops in scala
@@ -40,10 +41,12 @@ object Expressions extends App {
 
   var y = 4
 
+  // Introduce unit
   val notUsable = ( y = 5) //Unit === void
   println(notUsable)
 
   // examples of side effects are println(), while, reassignment.
+  // side effects are expressions that return unit
   // side effects are reminder of imperative programming , they are like instructions but in scala even
   // these are expressions that return unit
 
